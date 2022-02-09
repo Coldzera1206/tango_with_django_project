@@ -1,0 +1,14 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+
+{% block title_block %}
+Restricted Page
+{% endblock %}
+
+{% block body_block %}
+    <h1>Restricted Page</h1>
+    <div>
+        The user already logged in, user can see this page! If user weren't logged in, user can't see this page!
+        <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+    </div>
+{% endblock %}
